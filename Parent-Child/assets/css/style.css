@@ -1,0 +1,8 @@
+.icon{
+    cursor: pointer;
+    float: right;
+    
+}
+.icon:hover{
+    color: red;
+}

@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.nav-bar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: black;
+    
+}
+
+.nav-bar .close-btn{
+    position: absolute;
+    right: 50px;
+    color: grey;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-bar .close-btn:hover{
+    position: absolute;
+    right: 50px;
+    color: white;
+    padding-top: 20px;
+}
+.nav-bar .close-btn i{
+    font-size: 50px;
+}
+.nav-bar .navigation{
+    position: absolute;
+}
+.nav-bar .navigation ul{
+    display: flex;
+    flex-direction: row;
+}
+.nav-bar .navigation ul li{
+    list-style: none;
+}
+.nav-bar .navigation ul li a{
+    color: grey;
+    font-size: 50px;
+    text-decoration: none;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-bar .navigation ul li a:hover{
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    padding-right: 50px;
+}
+.close-menu{
+    transform:translateY(-100%);
+    transition-duration: 0.5s;
+    
+}
+.open-btn{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    z-index: -1;
+
+}
+.menu{
+    position: relative;
+    z-index: 1;
+}
+.open-menu{
+    transform:translateY(0);
+    transition-duration: 0.5s;
+}
+.open{
+    color: grey;
+}
